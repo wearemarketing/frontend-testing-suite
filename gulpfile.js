@@ -105,7 +105,7 @@ gulp.task('css', function() {
 
 gulp.task('browserify', function() {
     return browserify(config.origUrl + '/scripts/main.js')
-    .transform('babelify', {presets: ['es2015']})
+    .transform('babelify', {presets: ['env']})
     .bundle()
     .on('error', function (err) {
         $.notify.onError({

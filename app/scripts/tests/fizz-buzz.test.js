@@ -1,4 +1,4 @@
-var each = require('jest-each');
+import each from 'jest-each';
 
 class FizzBuzz {
     constructor() {
