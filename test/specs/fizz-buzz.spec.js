@@ -24,7 +24,6 @@ class FizzBuzz {
 }
 
 describe('Fizzbuzz game', () => {
-
     each([
         [1, 1],
         [2, 2],

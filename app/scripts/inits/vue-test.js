@@ -3,7 +3,7 @@
 const Vue = require('vue/dist/vue.js');
 
 function vueTest() {
-    
+
     let message = 'Hello world'
 
     new Vue({
