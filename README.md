@@ -16,9 +16,7 @@ $ a
 
 
 #### Next steps
-* Create methods (divisible by)
-* Export class FizzBuzz and import it to the test suite
-* Coverage
+* test classes
 
 #### More:
 We use `datasets` thanks to [jest-each](https://github.com/mattphillips/jest-each)

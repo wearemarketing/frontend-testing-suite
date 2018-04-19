@@ -1,10 +1,26 @@
-import sum from 'inits/sum';
+import each from 'jest-each';
+import {sum, product} from 'inits/sum';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+
+describe('Sum function', () => {
+    each([
+        [1, 2, 3],
+        [2, 22, 24]
+    ]).test('adds 2 numbers and returns it\'s sum', (a, b, result) => {
+        var action = sum(a, b);
+
+        expect(action).toBe(result);
+    });
 });
 
 
-test('adds 2 + 22 to equal 24', () => {
-  expect(sum(2, 22)).toBe(24);
-});
+describe('Product function', () => {
+    each([
+        [2, 5, 10],
+        [3, 10, 30]
+    ]).test('multiply 1 + 2 and returns it\'s product', (a, b, result) => {
+        var action = product(a, b);
+
+        expect(action).toBe(result);
+    });
+})

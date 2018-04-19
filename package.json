@@ -4,7 +4,7 @@
     "description": "A starter theme with gulp and postCSS",
     "main": "index.js",
     "scripts": {
-        "unit": "jest --config test/jest.conf.js --watch --coverage",
+        "unit": "jest --config test/jest.conf.js --watchAll --coverage",
         "test": "npm run unit"
     },
     "repository": {

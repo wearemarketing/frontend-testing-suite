@@ -5,18 +5,26 @@ export default class FizzBuzz {
     }
 
     playsWith(n) {
-        if(n % 3 == 0 && n % 5 == 0) {
+        if (this.divisibleBy3(n) && this.divisibleBy5(n)) {
             return `${this.fizz} ${this.buzz}`;
         }
 
-        if(n % 3 == 0){
+        if (this.divisibleBy3(n)) {
             return this.fizz;
         }
 
-        if(n % 5 == 0) {
+        if (this.divisibleBy5(n)) {
             return this.buzz;
         }
 
         return n;
+    }
+
+    divisibleBy3(n) {
+        return n % 3 == 0;
+    }
+
+    divisibleBy5(n) {
+        return n % 5 == 0;
     }
 }
