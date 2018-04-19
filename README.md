@@ -5,13 +5,17 @@
 #### Run tests
 
 ```sh
-$ npm test -- --watch
+$ npm test
 ```
 
 #### Run tests with _watch_
 ```sh
-$ npm test -- --watch
-$ a
+$ npm test -- --watchAll
+```
+
+#### Run tests with _coverage_
+```sh
+$ npm test -- --watchAll --coverage
 ```
 
 

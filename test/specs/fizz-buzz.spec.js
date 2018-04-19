@@ -10,7 +10,7 @@ describe('Fizzbuzz game', () => {
         [6, 'Fizz'],
         [10, 'Buzz'],
         [15, 'Fizz Buzz']
-    ]).test('plays with numbers', (a, b) => {
+    ]).test('plays with number %s', (a, b) => {
         // Asset
         var fizzBuzz = new FizzBuzz();
 

@@ -11,7 +11,7 @@ function vueTest() {
         data: {
             message: message
         }
-    })
+    });
 }
 
 export default vueTest;

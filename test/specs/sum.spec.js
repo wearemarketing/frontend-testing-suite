@@ -1,7 +1,6 @@
 import each from 'jest-each';
 import {sum, product} from 'inits/sum';
 
-
 describe('Sum function', () => {
     each([
         [1, 2, 3],
@@ -12,7 +11,6 @@ describe('Sum function', () => {
         expect(action).toBe(result);
     });
 });
-
 
 describe('Product function', () => {
     each([
