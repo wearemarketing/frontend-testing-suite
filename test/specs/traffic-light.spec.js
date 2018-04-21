@@ -33,9 +33,9 @@ describe('Traffic light', () => {
         ['green', 'yellow'],
         ['yellow', 'red'],
         ['red', 'green']
-    ]).test('Changes from %s to %s', (a, b) => {
+    ]).test('Changes from %s to %s', (a, result) => {
         var action = updateLight(a);
 
-        expect(action).toBe(b);
+        expect(action).toBe(result);
     });
 });

@@ -10,14 +10,14 @@ describe('Fizzbuzz game', () => {
         [6, 'Fizz'],
         [10, 'Buzz'],
         [15, 'Fizz Buzz']
-    ]).test('plays with number %s', (a, b) => {
+    ]).test('plays with number %s', (a, result) => {
         // Asset
         var fizzBuzz = new FizzBuzz();
 
         // Action
-        var result = fizzBuzz.playsWith(a);
+        var action = fizzBuzz.playsWith(a);
 
         // Assert
-        expect(result).toBe(b);
+        expect(action).toBe(result);
     });
 })
