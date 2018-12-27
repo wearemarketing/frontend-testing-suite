@@ -7,10 +7,6 @@ export default class Cell {
         this.status = status;
     }
 
-    neighbours() {
-        return this.neighboursNumber;
-    }
-
     isAlive() {
         if (this.neighboursNumber == 3) {
             this.status = true;

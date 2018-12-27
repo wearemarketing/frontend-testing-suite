@@ -3,17 +3,13 @@ import GameOfLife from 'inits/game-of-life';
 import Cell from 'inits/cell';
 
 const DEAD = false;
+const ALIVE = true;
 
 describe('Game Of Life', () => {
 
-    test('a live cell has no neighbours', () => {
-        var cell = new Cell();
-        expect(cell.neighbours()).toBe(0);
-    });
-
-    test('a live cell has 1 neightbour', () => {
-        var cell = new Cell({neighboursNumber: 1});
-        expect(cell.neighbours()).toBe(1);
+    test('An alive cell dies when has 0 neighbours', () => {
+        var cell = new Cell({neighboursNumber: 0, status: ALIVE});
+        expect(cell.isAlive()).toBe(false);
     });
 
     test('A cell dies when has 1 neighbours', () => {
@@ -33,6 +29,16 @@ describe('Game Of Life', () => {
 
     test('A cell dies when has 4 neighbours', () => {
         var cell = new Cell({neighboursNumber: 4});
+        expect(cell.isAlive()).toBe(false);
+    });
+
+    test('A cell dies when has 5 neighbours', () => {
+        var cell = new Cell({neighboursNumber: 5});
+        expect(cell.isAlive()).toBe(false);
+    });
+
+    test('A dead cell remains dead when has 0 neighbours', () => {
+        var cell = new Cell({neighboursNumber: 0, status: DEAD});
         expect(cell.isAlive()).toBe(false);
     });
 
