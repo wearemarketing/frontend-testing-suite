@@ -1,7 +1,7 @@
 {
-    "name": "frontend-starter-theme",
+    "name": "frontend-testing-suite",
     "version": "1.0.0",
-    "description": "A starter theme with gulp and postCSS",
+    "description": "Powered with GULP, postCSS, Browserify, Jest..",
     "main": "index.js",
     "scripts": {
         "coverage": "jest --config test/jest.conf.js --watchAll --coverage",
